@@ -13,3 +13,19 @@
 6. Line lengths around 80-100 characters is fine.
 
 7. Use linters. (Flake8)
+
+## Best unit-testing practices
+
+### (more or less) Python-specific
+
+- using specific unit-testing-oriented frameworks (e.g., pytest, unittest)
+- avoid writing unit tests in a form of one-line asserts in the middle of the other code; instead, write unit tests as separate functions each dedicated to a single test case
+- naming functions as "test_", and then test purpose
+- using test fixtures
+
+### not-Python-specific
+
+- tests shouldn’t duplicate implementation logic
+- tests should be as simple as possible
+- tests should be fase
+- unit tests should be isolated (should not have any dependencies or outside factors)
