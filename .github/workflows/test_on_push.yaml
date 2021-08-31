@@ -22,6 +22,8 @@ jobs:
         # Устанавливаем зависимости
         run: pip install -r app_python/requirements.txt
       - name: Run tests
-        run: coverage run app_python/tests.py
+        run: |
+          sudo chmod +x app_python/test.py
+          python -m app_python.test
       - name: Tests report
         run: coverage report
