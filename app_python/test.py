@@ -1,7 +1,7 @@
 import unittest
 import datetime
 import time
-from web_app import HelloWorld
+from app_python.web_app import HelloWorld
 
 class TestState(unittest.TestCase):
 
