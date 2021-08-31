@@ -25,5 +25,3 @@ jobs:
         run: |
           sudo chmod +x app_python/test.py
           python -m app_python.test
-      - name: Tests report
-        run: coverage report

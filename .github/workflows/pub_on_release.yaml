@@ -25,8 +25,6 @@ jobs:
         run: |
           sudo chmod +x app_python/test.py
           python -m app_python.test
-      - name: Tests report
-        run: coverage report
 
   build_and_pub:
     # Если тесты были пройдены успешно
