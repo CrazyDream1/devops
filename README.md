@@ -2,7 +2,7 @@
 
 ## 1. Python web app
 
-It is app that shows current moskow time. I used cherrypy framework.
+It is app that shows current moskow time. I used cherrypy framework. It saves log in /visits.
 
 ## 2. Containerization
 

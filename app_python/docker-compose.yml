@@ -1,0 +1,13 @@
+version: "3.7"
+
+services: 
+  web:
+    build: .
+    ports: 
+      - "8100:8100"
+    mem_limit: 300m
+    volumes:
+      - visits:/visits
+
+volumes:
+  visits:

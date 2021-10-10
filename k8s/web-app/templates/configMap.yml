@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: web-app-files
+data:
+ config.json: |-
+        {{ .Files.Get (printf "files/config.json") | quote }}
